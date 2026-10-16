@@ -1,0 +1,12 @@
+{
+  "name": "quick-question-ai",
+  "version": "0.1.0",
+  "description": "Cross-platform screenshot question helper for macOS and Windows",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "devDependencies": {
+    "electron": "^36.0.0"
+  }
+}

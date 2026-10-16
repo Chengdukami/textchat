@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; script-src 'self';" />
+  <link rel="stylesheet" href="settings.css" />
+</head>
+<body>
+  <main>
+    <h1>截图答题助手设置</h1>
+    <label>API 地址</label>
+    <input id="baseUrl" placeholder="https://api.openai.com/v1" />
+    <p class="hint">支持 OpenAI 兼容接口，地址填到 /v1 这一层。</p>
+
+    <label>模型名称</label>
+    <input id="model" placeholder="例如 gpt-4o-mini" />
+
+    <label>API Key</label>
+    <input id="apiKey" type="password" placeholder="sk-..." />
+
+    <div class="buttons">
+      <button id="save">保存</button>
+      <button id="debug" class="secondary">打开调试窗口</button>
+      <span id="status"></span>
+    </div>
+
+    <section>
+      <strong>快捷键</strong>
+      <div>← 截图　↑ 提交　↓ 显示/隐藏</div>
+    </section>
+  </main>
+  <script src="settings.js"></script>
+</body>
+</html>
